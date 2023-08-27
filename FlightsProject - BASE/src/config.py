@@ -1,32 +1,32 @@
 from dal.models import *
 import os
 
-class DatabaseUri:
-    def intupt_uri(self):
-        userName = input("Enter user name: ") or 'root'
-        password = input("Enter password: ") or 'Shoval963654'
-        host = input("Enter host: ") or 'localhost'
-        port = input("Enter port: ") or '3306'
-        schema = input("Enter schema: ") or 'flights_system_db'
+# class DatabaseUri:
+#     def intupt_uri(self):
+#         userName = input("Enter user name: ") or 'root'
+#         password = input("Enter password: ") or 'Shoval963654'
+#         host = input("Enter host: ") or 'localhost'
+#         port = input("Enter port: ") or '3306'
+#         schema = input("Enter schema: ") or 'flights_system_db'
 
-        return f'mysql://{userName}:{password}@{host}:{port}/{schema}'
+#         return f'mysql://{userName}:{password}@{host}:{port}/{schema}'
 
-    def write_or_read_uri(self):
-        URI_FILE = 'temp/uri'
+#     def write_or_read_uri(self):
+#         URI_FILE = 'temp/uri'
 
-        if not os.path.exists(URI_FILE):
-            with open(URI_FILE, 'w') as file:
-                file.write(self.intupt_uri())
+#         if not os.path.exists(URI_FILE):
+#             with open(URI_FILE, 'w') as file:
+#                 file.write(self.intupt_uri())
 
-        with open(URI_FILE, 'r') as file:
-            SQLALCHEMY_DATABASE_URI = file.readline().strip()
+#         with open(URI_FILE, 'r') as file:
+#             SQLALCHEMY_DATABASE_URI = file.readline().strip()
 
-        return SQLALCHEMY_DATABASE_URI
+#         return SQLALCHEMY_DATABASE_URI
 
-DatabaseUri = DatabaseUri()
+# DatabaseUri = DatabaseUri()
 
 class Config:
-    SQLALCHEMY_DATABASE_URI = DatabaseUri.write_or_read_uri()
+    SQLALCHEMY_DATABASE_URI = "mysql://Admin1234:Amit1234@azure-flights-db.mysql.database.azure.com:3306/flights_system_db?ssl_ca=DigiCertGlobalRootCA.crt.pem"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SECRET_KEY = 'flaskey'
 
