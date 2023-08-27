@@ -1,0 +1,141 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Customers",
+    "dateExported": "2023-08-02T13:36:23.711Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f4278c45-86d9-46bb-b9ce-93c122a387d7",
+            "colId": "ebd3f235-1c56-42aa-94d6-160b5daa822c",
+            "containerId": "",
+            "name": "get_customer",
+            "url": "http://127.0.0.1:5000/get/customers/10",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-06T20:40:20.342Z",
+            "modified": "2023-06-24T14:24:14.171Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6d831122-8c0a-4f19-a710-2aac094401f6",
+            "colId": "ebd3f235-1c56-42aa-94d6-160b5daa822c",
+            "containerId": "",
+            "name": "get_all_customers",
+            "url": "http://127.0.0.1:5000/get/customers",
+            "method": "GET",
+            "sortNum": 25000,
+            "created": "2023-06-06T20:39:20.513Z",
+            "modified": "2023-06-14T18:18:42.321Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "31798e80-a217-40f8-9773-076a8b69edf9",
+            "colId": "ebd3f235-1c56-42aa-94d6-160b5daa822c",
+            "containerId": "",
+            "name": "add_customer",
+            "url": "http://127.0.0.1:5000/add/add_customers",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-06T20:44:26.156Z",
+            "modified": "2023-07-24T15:46:20.994Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"address\": \"140 Shsisdsaf St\",\n    \"credit_card_no\": \"4s4s4444\",\n    \"first_name\": \"Shodssval\",\n    \"last_name\": \"Elsdssisany\",\n    \"phone_no\": \"666s66s\",\n    \"username\": \"addssasaadss\",\n    \"password\": \"adsasddaadss\",\n    \"email\": \"sdsass@smail.com\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f9682f86-5a1d-47ff-bc99-036b63670b29",
+            "colId": "ebd3f235-1c56-42aa-94d6-160b5daa822c",
+            "containerId": "",
+            "name": "add_all_customers",
+            "url": "http://127.0.0.1:5000/add/customers",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-06-06T20:50:28.347Z",
+            "modified": "2023-06-19T20:30:14.394Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\r\n   {\r\n    \"first_name\": \"James\",\r\n    \"last_name\": \"Baker\",\r\n    \"address\": \"321 Maple St\",\r\n    \"phone_no\": \"555-33233\",\r\n    \"credit_card_no\": \"**** **** **** 33313\",\r\n    \"user_id\": 23\r\n  },\r\n  {\r\n    \"first_name\": \"Mia\",\r\n    \"last_name\": \"Wright\",\r\n    \"address\": \"789 Birch St\",\r\n    \"phone_no\": \"555-44144\",\r\n    \"credit_card_no\": \"**** **** **** 44344\",\r\n    \"user_id\": 24\r\n  },\r\n  {\r\n    \"first_name\": \"Benjamin\",\r\n    \"last_name\": \"Scott\",\r\n    \"address\": \"456 Walnut St\",\r\n    \"phone_no\": \"555-55551\",\r\n    \"credit_card_no\": \"**** **** **** 55525\",\r\n    \"user_id\": 25\r\n  },\r\n  {\r\n    \"first_name\": \"Ava\",\r\n    \"last_name\": \"Green\",\r\n    \"address\": \"123 Spruce St\",\r\n    \"phone_no\": \"555-66366\",\r\n    \"credit_card_no\": \"**** **** **** 66616\",\r\n    \"user_id\": 26\r\n  },\r\n  {\r\n    \"first_name\": \"William\",\r\n    \"last_name\": \"Adams\",\r\n    \"address\": \"210 Oak St\",\r\n    \"phone_no\": \"555-77177\",\r\n    \"credit_card_no\": \"**** **** **** 71777\",\r\n    \"user_id\": 27\r\n  },\r\n  {\r\n    \"first_name\": \"Charlotte\",\r\n    \"last_name\": \"Turner\",\r\n    \"address\": \"543 Elm St\",\r\n    \"phone_no\": \"555-88188\",\r\n    \"credit_card_no\": \"**** **** **** 88388\",\r\n    \"user_id\": 28\r\n  },\r\n  {\r\n    \"first_name\": \"Alexander\",\r\n    \"last_name\": \"Parker\",\r\n    \"address\": \"876 Cedar St\",\r\n    \"phone_no\": \"555-99919\",\r\n    \"credit_card_no\": \"**** **** **** 99199\",\r\n    \"user_id\": 29\r\n  },\r\n  {\r\n    \"first_name\": \"Harper\",\r\n    \"last_name\": \"Collins\",\r\n    \"address\": \"109 Pine St\",\r\n    \"phone_no\": \"555-00010\",\r\n    \"credit_card_no\": \"**** **** **** 01000\",\r\n    \"user_id\": 30\r\n  }\r\n]",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b6cc9310-e794-4692-b88b-1876f02c10c4",
+            "colId": "ebd3f235-1c56-42aa-94d6-160b5daa822c",
+            "containerId": "",
+            "name": "update_customer",
+            "url": "http://127.0.0.1:5000/update/customers/10",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-06-06T20:52:14.016Z",
+            "modified": "2023-07-22T19:48:48.372Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"address\": \"876asd Spruce St\",\n  \"credit_card_no\": \"4567\",\n  \"first_name\": \"Matasthew\",\n  \"id\": 10,\n  \"last_name\": \"Taysadlor\",\n  \"phone_no\": \"555-dafs4568\",\n  \"user_id\": 9\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4a3f8874-a8fa-4e10-92a3-54b8308468cf",
+            "colId": "ebd3f235-1c56-42aa-94d6-160b5daa822c",
+            "containerId": "",
+            "name": "update_all_customers",
+            "url": "http://127.0.0.1:5000/update/customers",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-06-06T20:54:33.743Z",
+            "modified": "2023-07-22T19:50:21.458Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\n  {\n    \"address\": \"123 Maisn St\",\n    \"credit_card_no\": \"1111111111\",\n    \"first_name\": \"Joshn\",\n    \"id\": 3,\n    \"last_name\": \"Dose\",\n    \"phone_no\": \"123s4567890\",\n    \"user_id\": 2\n  },\n  {\n    \"address\": \"456 Elm St\",\n    \"credit_card_no\": \"2222\",\n    \"first_name\": \"Janse\",\n    \"id\": 5,\n    \"last_name\": \"Sth\",\n    \"phone_no\": \"021\",\n    \"user_id\": 4\n  }\n]",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "70a7ca6e-294f-4685-adff-a6791d60642b",
+            "colId": "ebd3f235-1c56-42aa-94d6-160b5daa822c",
+            "containerId": "",
+            "name": "remove_customer",
+            "url": "http://127.0.0.1:5000/remove/customers/19",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-06-06T20:55:49.567Z",
+            "modified": "2023-07-22T19:50:36.928Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7da53c70-9759-4583-984f-3e9061974dc2",
+            "colId": "ebd3f235-1c56-42aa-94d6-160b5daa822c",
+            "containerId": "",
+            "name": "remove_all_customers",
+            "url": "http://127.0.0.1:5000/remove/customers",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-06-06T20:57:23.007Z",
+            "modified": "2023-07-22T19:50:54.265Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

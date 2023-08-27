@@ -1,0 +1,52 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Login",
+    "dateExported": "2023-08-02T13:35:51.422Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "7d501248-91e4-4d11-953c-d5f588730066",
+            "colId": "081b08b5-4d40-4d75-bb6f-d5fe58213c08",
+            "containerId": "",
+            "name": "login",
+            "url": "http://127.0.0.1:5000/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-06-14T13:51:55.719Z",
+            "modified": "2023-07-24T19:35:32.937Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\": \"password2\",\n  \"username\": \"user2\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "13f81a19-f04b-485e-bfe4-c5cf30942a2f",
+            "colId": "081b08b5-4d40-4d75-bb6f-d5fe58213c08",
+            "containerId": "",
+            "name": "logout",
+            "url": "http://127.0.0.1:5000/user/logout",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-14T13:52:05.686Z",
+            "modified": "2023-06-14T13:52:05.686Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"password\": \"password1\",\n    \"username\": \"user1\"\n  }",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

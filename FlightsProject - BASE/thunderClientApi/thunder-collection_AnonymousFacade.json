@@ -1,0 +1,47 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "AnonymousFacade",
+    "dateExported": "2023-08-02T13:35:44.071Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d0d5a004-eec0-4f4d-a087-6e1eec4a6135",
+            "colId": "1c5ff95e-01fc-4a14-8298-3955df96e94c",
+            "containerId": "",
+            "name": "login",
+            "url": "http://127.0.0.1:5000/anonymous/login",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2023-07-23T19:00:29.964Z",
+            "modified": "2023-07-23T19:00:29.964Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{  \n  \"password\": \"password1\",\n  \"username\": \"user1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3c1a292b-8e0d-44b9-afa3-f8d4f1ff2cb7",
+            "colId": "1c5ff95e-01fc-4a14-8298-3955df96e94c",
+            "containerId": "",
+            "name": "add_customer",
+            "url": "http://127.0.0.1:5000/anonymous/add_customers",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-23T19:00:06.874Z",
+            "modified": "2023-07-23T19:00:06.874Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"address\": \"140 Shif St\",\n    \"credit_card_no\": \"44\",\n    \"first_name\": \"Shdval\",\n    \"last_name\": \"Ediny\",\n    \"phone_no\": \"666d66\",\n    \"username\": \"adssdss\",\n    \"password\": \"adaadss\",\n    \"email\": \"sds@mail.com\"\n  }",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

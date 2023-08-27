@@ -1,0 +1,141 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Administrators",
+    "dateExported": "2023-08-02T13:36:44.319Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "92972a4d-05b2-4bc0-9082-42346f849838",
+            "colId": "3ce5df71-b483-49d5-888e-89f2f1c74002",
+            "containerId": "",
+            "name": "get_admin",
+            "url": "http://127.0.0.1:5000/get/administrators/3",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-06T14:19:49.596Z",
+            "modified": "2023-07-08T18:01:05.389Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bdbcea4c-c6d3-4010-bb94-7c712ebacd61",
+            "colId": "3ce5df71-b483-49d5-888e-89f2f1c74002",
+            "containerId": "",
+            "name": "get_all_administrators",
+            "url": "http://127.0.0.1:5000/get/administrators",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-06T14:23:58.769Z",
+            "modified": "2023-07-26T18:51:29.259Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e71632d5-2d63-4d8f-a8d9-f070f632825a",
+            "colId": "3ce5df71-b483-49d5-888e-89f2f1c74002",
+            "containerId": "",
+            "name": "add_admin",
+            "url": "http://127.0.0.1:5000/add/add_administrators",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-06T14:31:49.508Z",
+            "modified": "2023-07-22T19:28:49.703Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"first_name\": \"adsaasaddss\",\n    \"last_name\": \"sdasaasddss\",\n    \"username\": \"adsdasdasaadss\",\n    \"password\": \"adadssaadss\",\n    \"email\": \"sdsadaasdas@mail.com\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8798b693-da90-41e9-8a60-68545cbc200c",
+            "colId": "3ce5df71-b483-49d5-888e-89f2f1c74002",
+            "containerId": "",
+            "name": "add_all_administrators",
+            "url": "http://127.0.0.1:5000/add/administrators",
+            "method": "POST",
+            "sortNum": 35000,
+            "created": "2023-06-06T16:10:00.340Z",
+            "modified": "2023-07-22T18:40:29.623Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\n  { \"first_name\": \"Joshn\", \"last_name\": \"Dsoe\", \"username\": \"sa\", \"password\": \"a@gmsail.com\", \"email\": \"a@sgmail.com\"},\n  { \"first_name\": \"Janse\", \"last_name\": \"Smitsh\", \"user_id\": \"bs\", \"password\": \"b@gmasil.com\", \"email\": \"b@gmsail.com\"},\n  { \"first_name\": \"Micshael\", \"last_name\": \"Johsnson\", \"user_id\": \"cs\", \"password\": \"c@gmasil.com\", \"email\": \"c@gmasil.com\"},\n  { \"first_name\": \"Emsily\", \"last_name\": \"Willisams\", \"user_id\": \"ds\", \"password\": \"d@gmsail.com\", \"email\": \"d@gmasil.com\" }\n]\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e9719a38-2b4f-4d54-86b4-894cda7678cc",
+            "colId": "3ce5df71-b483-49d5-888e-89f2f1c74002",
+            "containerId": "",
+            "name": "update_admin",
+            "url": "http://127.0.0.1:5000/update/administrators/2",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-06-06T14:44:44.503Z",
+            "modified": "2023-07-22T19:37:42.590Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"first_name\": \"Adminsdadasasddsdasb\",\n    \"id\": 2,\n    \"last_name\": \"LastnaasdadassdmeB\",\n    \"user_id\": 15\n  }\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ae101ce4-f60e-4c21-86bb-b03fcf5fa169",
+            "colId": "3ce5df71-b483-49d5-888e-89f2f1c74002",
+            "containerId": "",
+            "name": "update_all_administrators",
+            "url": "http://127.0.0.1:5000/update/administrators",
+            "method": "PUT",
+            "sortNum": 45000,
+            "created": "2023-06-06T15:31:09.624Z",
+            "modified": "2023-07-22T19:39:45.303Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\n  {\n    \"first_name\": \"Admiadsn B\",\n    \"id\": 3,\n    \"last_name\": \"LasasdtnameB\",\n    \"user_id\": 3\n  },\n  {\n    \"first_name\": \"Admiadsn C\",\n    \"id\": 4,\n    \"last_name\": \"LastndasameC\",\n    \"user_id\": 4\n  }\n]",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8de5a23e-a0c1-4886-8fa9-ce339e3786a0",
+            "colId": "3ce5df71-b483-49d5-888e-89f2f1c74002",
+            "containerId": "",
+            "name": "remove_admin",
+            "url": "http://127.0.0.1:5000/remove/administrators/4",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-06-06T14:46:12.594Z",
+            "modified": "2023-07-22T19:40:04.922Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "055d21d8-aace-4d45-88d4-3bb3c919d124",
+            "colId": "3ce5df71-b483-49d5-888e-89f2f1c74002",
+            "containerId": "",
+            "name": "remove_all_administrators",
+            "url": "http://127.0.0.1:5000/remove/administrators",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-06-06T14:54:21.064Z",
+            "modified": "2023-07-22T19:40:23.826Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

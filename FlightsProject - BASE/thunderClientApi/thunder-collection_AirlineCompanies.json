@@ -1,0 +1,141 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "AirlineCompanies",
+    "dateExported": "2023-08-02T13:36:41.158Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "1eb7f79c-707e-4a37-9ef5-87f581eb1db7",
+            "colId": "dd82005e-44c4-4c79-83fb-e9265f72fa79",
+            "containerId": "",
+            "name": "get_airline_company",
+            "url": "http://127.0.0.1:5000/get/airlinecompanies/1",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-06T16:42:31.800Z",
+            "modified": "2023-07-22T19:40:56.616Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7dd99819-5a75-4d96-bc1a-675ad6d8f735",
+            "colId": "dd82005e-44c4-4c79-83fb-e9265f72fa79",
+            "containerId": "",
+            "name": "get_all_airline_companies",
+            "url": "http://127.0.0.1:5000/get/airlinecompanies",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-06T16:43:13.082Z",
+            "modified": "2023-06-19T22:10:20.422Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "20a19ddd-bc77-4a93-a300-525cacde134b",
+            "colId": "dd82005e-44c4-4c79-83fb-e9265f72fa79",
+            "containerId": "",
+            "name": "add_airline_company",
+            "url": "http://127.0.0.1:5000/add/add_airlinecompanies",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-06T16:49:30.876Z",
+            "modified": "2023-07-22T19:42:46.919Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"country_id\": 1,\n    \"name\": \"Airasdline D\",\n    \"username\": \"as\",\n    \"password\": \"as\",\n    \"email\": \"as@mail.com\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3d23b029-332f-4683-9ef0-349d723f563a",
+            "colId": "dd82005e-44c4-4c79-83fb-e9265f72fa79",
+            "containerId": "",
+            "name": "add_all_airline_companies",
+            "url": "http://127.0.0.1:5000/add/airlinecompanies",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-06-06T16:55:02.428Z",
+            "modified": "2023-06-19T20:02:53.880Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\r\n  { \"name\": \"Airline Company 1\", \"country_id\": 1, \"user_id\": 1 },\r\n  { \"name\": \"Airline Company 2\", \"country_id\": 2, \"user_id\": 2 },\r\n  { \"name\": \"Airline Company 3\", \"country_id\": 3, \"user_id\": 3 },\r\n  { \"name\": \"Airline Company 4\", \"country_id\": 4, \"user_id\": 4 },\r\n  { \"name\": \"Airline Company 5\", \"country_id\": 5, \"user_id\": 5 },\r\n  { \"name\": \"Airline Company 6\", \"country_id\": 6, \"user_id\": 6 },\r\n  { \"name\": \"Airline Company 7\", \"country_id\": 7, \"user_id\": 7 },\r\n  { \"name\": \"Airline Company 8\", \"country_id\": 8, \"user_id\": 8 },\r\n  { \"name\": \"Airline Company 9\", \"country_id\": 9, \"user_id\": 9 },\r\n  { \"name\": \"Airline Company 10\", \"country_id\": 10, \"user_id\": 10 },\r\n  { \"name\": \"Airline Company 11\", \"country_id\": 11, \"user_id\": 11 },\r\n  { \"name\": \"Airline Company 12\", \"country_id\": 12, \"user_id\": 12 },\r\n  { \"name\": \"Airline Company 13\", \"country_id\": 13, \"user_id\": 13 },\r\n  { \"name\": \"Airline Company 14\", \"country_id\": 14, \"user_id\": 14 },\r\n  { \"name\": \"Airline Company 15\", \"country_id\": 15, \"user_id\": 15 },\r\n  { \"name\": \"Airline Company 16\", \"country_id\": 16, \"user_id\": 16 },\r\n  { \"name\": \"Airline Company 17\", \"country_id\": 17, \"user_id\": 17 },\r\n  { \"name\": \"Airline Company 18\", \"country_id\": 18, \"user_id\": 18 },\r\n  { \"name\": \"Airline Company 19\", \"country_id\": 19, \"user_id\": 19 },\r\n  { \"name\": \"Airline Company 20\", \"country_id\": 20, \"user_id\": 20 },\r\n  { \"name\": \"Airline Company 21\", \"country_id\": 21, \"user_id\": 21 },\r\n  { \"name\": \"Airline Company 22\", \"country_id\": 22, \"user_id\": 22 },\r\n  { \"name\": \"Airline Company 23\", \"country_id\": 23, \"user_id\": 23 },\r\n  { \"name\": \"Airline Company 24\", \"country_id\": 24, \"user_id\": 24 },\r\n  { \"name\": \"Airline Company 25\", \"country_id\": 25, \"user_id\": 25 },\r\n  { \"name\": \"Airline Company 26\", \"country_id\": 26, \"user_id\": 26 },\r\n  { \"name\": \"Airline Company 27\", \"country_id\": 27, \"user_id\": 27 },\r\n  { \"name\": \"Airline Company 28\", \"country_id\": 28, \"user_id\": 28 },\r\n  { \"name\": \"Airline Company 29\", \"country_id\": 29, \"user_id\": 29 },\r\n  { \"name\": \"Airline Company 30\", \"country_id\": 30, \"user_id\": 30 }\r\n]\r\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8c4a82b8-fbea-4681-9940-340348c3c17d",
+            "colId": "dd82005e-44c4-4c79-83fb-e9265f72fa79",
+            "containerId": "",
+            "name": "update_airline_company",
+            "url": "http://127.0.0.1:5000/airlinecompanies/11",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-06-06T16:57:39.335Z",
+            "modified": "2023-06-11T20:08:40.535Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"country_id\": 2,\n    \"name\": \"Airline E\",\n    \"user_id\": 8\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "23ea9c7a-4758-4343-a31d-93d153efd6ea",
+            "colId": "dd82005e-44c4-4c79-83fb-e9265f72fa79",
+            "containerId": "",
+            "name": "update_all_airline_companies",
+            "url": "http://127.0.0.1:5000/airlinecompanies",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-06-06T17:02:27.816Z",
+            "modified": "2023-06-11T20:08:43.070Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[  \n  {\n    \"country_id\": 2,\n    \"id\": 11,\n    \"name\": \"Airline e\",\n    \"user_id\": 8\n  },\n  {\n    \"country_id\": 3,\n    \"id\": 12,\n    \"name\": \"Airline f\",\n    \"user_id\": 9\n  }\n]",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "17f8a4a0-5483-4f19-8a3a-0867d5cf04c1",
+            "colId": "dd82005e-44c4-4c79-83fb-e9265f72fa79",
+            "containerId": "",
+            "name": "remove_airline_company",
+            "url": "http://127.0.0.1:5000/remove/airlinecompanies/11",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-06-06T17:03:43.907Z",
+            "modified": "2023-07-22T19:43:20.396Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5bd88580-1248-4744-b200-534d93e06541",
+            "colId": "dd82005e-44c4-4c79-83fb-e9265f72fa79",
+            "containerId": "",
+            "name": "remove_all_airline_companies",
+            "url": "http://127.0.0.1:5000/remove/airlinecompanies",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-06-06T20:06:46.539Z",
+            "modified": "2023-07-22T19:43:33.108Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

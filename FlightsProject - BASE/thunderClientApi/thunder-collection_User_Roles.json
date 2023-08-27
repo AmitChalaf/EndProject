@@ -1,0 +1,141 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "User_Roles",
+    "dateExported": "2023-08-02T13:36:14.662Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e0882dae-d456-4410-93a4-609cc8b8295e",
+            "colId": "876fd851-478e-49a7-a43d-15f88763f08f",
+            "containerId": "",
+            "name": "get_user_role",
+            "url": "http://127.0.0.1:5000/get/userroles",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-07T13:37:53.024Z",
+            "modified": "2023-06-24T17:12:34.442Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a4b1cbf2-0be6-44df-a571-bb0129470726",
+            "colId": "876fd851-478e-49a7-a43d-15f88763f08f",
+            "containerId": "",
+            "name": "get_all_user_roles",
+            "url": "http://127.0.0.1:5000/get/userroles",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-07T13:38:16.697Z",
+            "modified": "2023-06-21T15:30:05.125Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0be07ab9-f978-4c7e-93bc-ef268add5821",
+            "colId": "876fd851-478e-49a7-a43d-15f88763f08f",
+            "containerId": "",
+            "name": "add_userroles",
+            "url": "http://127.0.0.1:5000/add/add_userroles",
+            "method": "POST",
+            "sortNum": 35000,
+            "created": "2023-06-19T17:43:11.782Z",
+            "modified": "2023-06-24T16:34:05.378Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\n    \"role_name\": \"Amit\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "08bfba57-a3be-4b16-9f7f-1ece2486ba5e",
+            "colId": "876fd851-478e-49a7-a43d-15f88763f08f",
+            "containerId": "",
+            "name": "add_all_user_roles",
+            "url": "http://127.0.0.1:5000/add/userroles",
+            "method": "POST",
+            "sortNum": 37500,
+            "created": "2023-06-07T13:41:10.320Z",
+            "modified": "2023-06-24T16:35:06.249Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\n  { \"role_name\": \"Administrator\" },\n  { \"role_name\": \"Customer\" },\n  { \"role_name\": \"AirlineCompany\" },\n  { \"role_name\": \"User\" },\n  { \"role_name\": \"Anonymous\" }\n]\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f0b16275-1c69-4c1a-9ac1-98824a77d788",
+            "colId": "876fd851-478e-49a7-a43d-15f88763f08f",
+            "containerId": "",
+            "name": "update_user_role",
+            "url": "http://127.0.0.1:5000/update/userroles/1",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-06-07T13:41:59.405Z",
+            "modified": "2023-06-24T16:51:30.664Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"role_name\": \"Administrator\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c4716414-ffa8-4066-b517-dabf3e0d41c2",
+            "colId": "876fd851-478e-49a7-a43d-15f88763f08f",
+            "containerId": "",
+            "name": "update_all_user_roles",
+            "url": "http://127.0.0.1:5000/update/userroles",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-06-07T13:43:17.719Z",
+            "modified": "2023-06-24T16:44:45.332Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "[\n  {\n    \"id\": 1,\n    \"role_name\": \"Administrator\"\n  },\n  {\n    \"id\": 2,\n    \"role_name\": \"Customer\"\n  }\n]",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "51449374-8758-409b-abcf-baec1ac7db51",
+            "colId": "876fd851-478e-49a7-a43d-15f88763f08f",
+            "containerId": "",
+            "name": "remove_user_role",
+            "url": "http://127.0.0.1:5000/remove/userroles/8",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-06-07T13:44:51.800Z",
+            "modified": "2023-07-22T19:58:53.189Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "599e768e-18c8-43e1-8b0c-7e2c20be7c66",
+            "colId": "876fd851-478e-49a7-a43d-15f88763f08f",
+            "containerId": "",
+            "name": "remove_all_user_roles",
+            "url": "http://127.0.0.1:5000/remove/userroles",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-06-07T13:45:03.186Z",
+            "modified": "2023-07-22T19:59:00.844Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

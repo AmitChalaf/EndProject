@@ -1,0 +1,146 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "FacadeBase",
+    "dateExported": "2023-08-02T13:35:48.534Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "27cef2d4-1b94-4054-99bb-9c3a4796b965",
+            "colId": "c4643eae-c3af-447e-87be-58d6d5b46835",
+            "containerId": "",
+            "name": "get_all_flights",
+            "url": "http://127.0.0.1:5000/base/flights",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-07-22T20:28:08.697Z",
+            "modified": "2023-07-22T20:28:08.697Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "56a2efc9-c6eb-4000-954a-f19a3c059497",
+            "colId": "c4643eae-c3af-447e-87be-58d6d5b46835",
+            "containerId": "",
+            "name": "get_flight_by_id",
+            "url": "http://127.0.0.1:5000/base/flights/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-07-22T20:28:47.098Z",
+            "modified": "2023-07-22T20:28:47.098Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cf55e429-36e4-48a2-8a62-5969f407ffae",
+            "colId": "c4643eae-c3af-447e-87be-58d6d5b46835",
+            "containerId": "",
+            "name": "get_flights_by_parameters",
+            "url": "http://127.0.0.1:5000/base/flights/parameters",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-07-22T20:30:17.498Z",
+            "modified": "2023-07-22T20:30:17.498Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"origin_country_id\": 1,\n  \"destination_country_id\": 2,\n  \"date\":\"2023-06-20 10:00:00\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "781c6a9d-c2d2-48f3-9546-9918f4ab82d2",
+            "colId": "c4643eae-c3af-447e-87be-58d6d5b46835",
+            "containerId": "",
+            "name": "get_all_airlines",
+            "url": "http://127.0.0.1:5000/base/airlines",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-07-22T20:30:52.634Z",
+            "modified": "2023-07-22T20:30:52.634Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"origin_country_id\": 1,\n  \"destination_country_id\": 2,\n  \"date\":\"2023-06-20 10:00:00\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "dc4ffdfc-03f8-4b40-8d5f-4b48e688c0fd",
+            "colId": "c4643eae-c3af-447e-87be-58d6d5b46835",
+            "containerId": "",
+            "name": "get_airline_by_id",
+            "url": "http://127.0.0.1:5000/base/airlines/1",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-07-22T20:31:10.930Z",
+            "modified": "2023-07-22T20:31:10.930Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"origin_country_id\": 1,\n  \"destination_country_id\": 2,\n  \"date\":\"2023-06-20 10:00:00\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "77d11859-1dcc-4b4c-a244-665f15ec2902",
+            "colId": "c4643eae-c3af-447e-87be-58d6d5b46835",
+            "containerId": "",
+            "name": "get_airline_by_parameters",
+            "url": "http://127.0.0.1:5000/base/airlines/parameters",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-07-22T20:31:47.026Z",
+            "modified": "2023-07-22T20:31:47.026Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Airline Company 1\",\n  \"country_id\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0820e3a1-5645-43bf-81f0-d052779a1bee",
+            "colId": "c4643eae-c3af-447e-87be-58d6d5b46835",
+            "containerId": "",
+            "name": "get_all_countries",
+            "url": "http://127.0.0.1:5000/base/countries",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-07-22T20:32:06.410Z",
+            "modified": "2023-07-22T20:32:06.410Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Airline Company 1\",\n  \"country_id\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2ef5e79e-d876-497c-ae07-8aa62168a0b2",
+            "colId": "c4643eae-c3af-447e-87be-58d6d5b46835",
+            "containerId": "",
+            "name": "get_country_by_id",
+            "url": "http://127.0.0.1:5000/base/countries/1",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-07-22T20:34:00.921Z",
+            "modified": "2023-07-22T20:34:00.922Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
