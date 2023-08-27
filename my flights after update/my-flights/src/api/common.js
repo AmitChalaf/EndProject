@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getAirlineByUsername = async (userName) => {
   /* try {
-      const response = await axios.get('http://127.0.0.1:5000/search/airlines/username/' + userName);
+      const response = await axios.get('azure-flights-flask.azurewebsites.net/search/airlines/username/' + userName);
       setData(response.data);
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -17,7 +17,7 @@ export const getAirlineByUsername = async (userName) => {
 
 export const getCustomerByUsername = async (userName) => {
   /* try {
-       const response = await axios.get('http://127.0.0.1:5000/search/customers/username/' + userName);
+       const response = await axios.get('azure-flights-flask.azurewebsites.net/search/customers/username/' + userName);
        setData(response.data);
      } catch (error) {
        console.error('Error fetching data:', error);
@@ -32,7 +32,7 @@ export const getCustomerByUsername = async (userName) => {
 
 export const getUserByUsername = async (userName) => {
   /* try {
-       const response = await axios.get('http://127.0.0.1:5000/search/users/username/' + userName);
+       const response = await axios.get('azure-flights-flask.azurewebsites.net/search/users/username/' + userName);
        setData(response.data);
      } catch (error) {
        console.error('Error fetching data:', error);
@@ -51,7 +51,7 @@ export const getFlightsByParameters = async (
   date
 ) => {
   /* try {
-       const response = await axios.get('http://127.0.0.1:5000/search/flights/parameters');
+       const response = await axios.get('azure-flights-flask.azurewebsites.net/search/flights/parameters');
        setData(response.data);
      } catch (error) {
        console.error('Error fetching data:', error);
@@ -66,7 +66,7 @@ export const getFlightsByParameters = async (
 
 export const getFlightsByAirlineId = async (airlineId) => {
   /* try {
-       const response = await axios.get('http://127.0.0.1:5000/search/flights/airline/' + airlineId);
+       const response = await axios.get('azure-flights-flask.azurewebsites.net/search/flights/airline/' + airlineId);
        setData(response.data);
      } catch (error) {
        console.error('Error fetching data:', error);
@@ -81,7 +81,7 @@ export const getFlightsByAirlineId = async (airlineId) => {
 
 export const getArrivalFlights = async (countryId) => {
   /* try {
-       const response = await axios.get('http://127.0.0.1:5000/search/flights/arrival-flights/' + countryId);
+       const response = await axios.get('azure-flights-flask.azurewebsites.net/search/flights/arrival-flights/' + countryId);
        setData(response.data);
      } catch (error) {
        console.error('Error fetching data:', error);
@@ -96,7 +96,7 @@ export const getArrivalFlights = async (countryId) => {
 
 export const getDepartureFlights = async (countryId) => {
   /* try {
-       const response = await axios.get('http://127.0.0.1:5000/search/flights/departure-flights/' + countryId);
+       const response = await axios.get('azure-flights-flask.azurewebsites.net/search/flights/departure-flights/' + countryId);
        setData(response.data);
      } catch (error) {
        console.error('Error fetching data:', error);
@@ -111,7 +111,7 @@ export const getDepartureFlights = async (countryId) => {
 
 export const fetchFlights = async () => {
   try {
-    const response = await axios.get("http://127.0.0.1:5000/get/flights");
+    const response = await axios.get("azure-flights-flask.azurewebsites.net/get/flights");
     const transformedData = response.data.map((item) => {
       return {
         id: item.id.toString(),
@@ -133,7 +133,7 @@ export const fetchFlightDetails = async (flightId) => {
   try {
     // Replace 'https://api.example.com/flights' with the actual URL of your API endpoint for flights
     const response = await axios.get(
-      "http://127.0.0.1:5000/get/flights/" + flightId
+      "azure-flights-flask.azurewebsites.net/get/flights/" + flightId
     );
     const item = response.data;
     return {
@@ -153,7 +153,7 @@ export const fetchFlightDetails = async (flightId) => {
 export const fetchUserFlights = async (userId) => {
   try {
     const response = await axios.get(
-      "http://127.0.0.1:5000/search/flights/customer/" + userId
+      "azure-flights-flask.azurewebsites.net/search/flights/customer/" + userId
       
     );
     console.log(response.data)

@@ -7,7 +7,7 @@ export const fetchAirlineDetails = async (airlineId) => {
   };
   try {
     const response = await axios.get(
-      "http://127.0.0.1:5000/get/airlinecompanies/" + airlineId
+      "azure-flights-flask.azurewebsites.net/get/airlinecompanies/" + airlineId
     );
     return response.data;
     const item = response.data;

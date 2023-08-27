@@ -3,7 +3,7 @@ import axios from 'axios';
 export const fetchCustomerDetails = async (customerId) => {
 
 try {
-      const response = await axios.get('http://127.0.0.1:5000/get/customers/' + customerId);
+      const response = await axios.get('azure-flights-flask.azurewebsites.net/get/customers/' + customerId);
       const item = response.data
         return {
           id: item.id.toString(),
@@ -25,7 +25,7 @@ try {
     try {
         // Send the updated customer data to the server using Axios
         // this url needs to get the customers id also
-        const response = await axios.put('http://127.0.0.1:5000/update/customers/', customer);
+        const response = await axios.put('azure-flights-flask.azurewebsites.net/update/customers/', customer);
         // Assuming the server successfully updated the customer details, show a success message to the user
         console.log('Customer details updated successfully!', response.data)
         return true;
@@ -40,7 +40,7 @@ try {
   export const purchaseTicket =  async (customerId, ticketId) => {
     try {
         // Send the updated customer data to the server using Axios
-        const response = await axios.post('http://127.0.0.1:5000/add/add_tickets', {
+        const response = await axios.post('azure-flights-flask.azurewebsites.net/add/add_tickets', {
             customerId: customerId,
             ticketId: ticketId,
           });
@@ -59,7 +59,7 @@ try {
     try {
         // Send the updated customer data to the server using Axios
         // this url needs to get a ticket id
-        const response = await axios.put('http://127.0.0.1:5000/remove/tickets/', {
+        const response = await axios.put('azure-flights-flask.azurewebsites.net/remove/tickets/', {
             customerId: customerId,
             ticketId: ticketId,
           });
