@@ -17,6 +17,7 @@ def init_app():
     CORS(app)
     
     # Register routes and blueprints
+    app.add_url_rule('/', methods=['GET'], view_func=lambda:"hello world")
     setup_csuRoutes()
     setup_facadesRoutes()
     setup_FacadesBp()

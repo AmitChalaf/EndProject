@@ -26,7 +26,8 @@ import os
 # DatabaseUri = DatabaseUri()
 
 class Config:
-    SQLALCHEMY_DATABASE_URI = "mysql://Admin1234:Amit1234@azure-flights-db.mysql.database.azure.com:3306/flights_system_db?ssl_ca=DigiCertGlobalRootCA.crt.pem"
+    SQLALCHEMY_DATABASE_URI = "mysql://root:1234@localhost:3306/Flights_system_db"
+    # SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://root:1234@db/Flights_system_db"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SECRET_KEY = 'flaskey'
 

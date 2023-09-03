@@ -15,19 +15,23 @@ def create_tables():
     print("Tables created successfully!")
 
 def insert_data():
-    # Insert data into multiple tables
-    for model in MODELS:
-        model_name = model.__name__
-        model_file = f"{model_name[0].lower() + model_name[1:]}Data.json"
-        json_path = os.path.join(DATA_FOLDER, model_file)
+    
+    try: # Insert data into multiple tables
+        for model in MODELS:
+            model_name = model.__name__
+            model_file = f"{model_name[0].lower() + model_name[1:]}Data.json"
+            json_path = os.path.join(DATA_FOLDER, model_file)
 
-        with open(json_path, 'r') as file:
-            data = json.load(file)
+            with open(json_path, 'r') as file:
+                data = json.load(file)
 
-        # Insert data into table
-        for item in data:
-            record = model(**item)
-            db.session.add(record)
+            # Insert data into table
+            for item in data:
+                record = model(**item)
+                db.session.add(record)
 
-        db.session.commit()
-        print(f"Data inserted into {model_name} successfully!")
+            db.session.commit()
+            print(f"Data inserted into {model_name} successfully!")
+
+    except:
+        pass

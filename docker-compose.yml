@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: "my-flights"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: "FlightsProject - BASE"
+    ports:
+      - "5000:5000"
+    environment:
+      FLASK_APP: app.py
+      FLASK_ENV: development
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    ports:
+      - 3306
+    environment:
+      MYSQL_DATABASE: flights_system_db
+      MYSQL_ROOT_PASSWORD: 1234
+    volumes:
+      - mysqldata:/var/lib/mysql
+      # - C:\Users\97252\Desktop\SCHOOL\projects\EndProject\mysql\flightSystem.sql:/docker-entrypoint-initdb.d/flightSystem.sql
+
+
+volumes:
+  mysqldata:
